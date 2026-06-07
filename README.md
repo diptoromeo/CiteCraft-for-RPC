@@ -190,8 +190,8 @@ OOD_HOLDOUT = {
 @inproceedings{citecraft2025,
   title     = {CiteCraft: A Heterogeneous Temporal Citation Graph Benchmark
                for Multi-Task Scientific NLP},
-  booktitle = {Proceedings of EMNLP 2025},
-  year      = {2025}
+  booktitle = {Proceedings of the IEEE International Conference on Data Mining (ICDM)},
+  year      = {2026}
 }
 ```
 
