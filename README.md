@@ -17,10 +17,10 @@ single **Heterogeneous Temporal Citation Graph (HTCG)**:
 
 | Task | Description | Metric |
 |------|-------------|--------|
-| **T1** | Citation Link Prediction | AUC-ROC · MRR · Hits@K |
+| **T1** | Citation Link Prediction | AUC-ROC · MRR  |
 | **T2** | Citation Intent Classification | Macro-F1 |
 | **T3** | Paper Topic Classification | Accuracy · Hier-F1 · SLC · OOD-AR |
-| **T4** | Influence Paper Ranking | NDCG@10 · MRR |
+| **T4** | Influence Paper Ranking | NDCG@10 |
 
 ### Key Contributions
 
@@ -42,12 +42,14 @@ single **Heterogeneous Temporal Citation Graph (HTCG)**:
 
 | Model | T1 AUC | T2 F1 | T3 Acc | T3 Hier-F1 | T3 SLC | OOD-AR | T4 NDCG |
 |-------|--------|-------|--------|------------|--------|--------|---------|
-| Random | 50.0 | 25.0 | 14.3 | 12.0 | 0.082 | 14.3 | 33.0 |
-| GCN | 77.8 | 46.1 | 58.4 | 51.3 | 0.321 | 31.4 | 67.9 |
-| GATv2 | 81.3 | 51.7 | 63.2 | 55.8 | 0.349 | 35.6 | 71.4 |
-| TGN | 83.6 | 49.2 | 61.1 | 52.7 | 0.298 | 33.2 | 74.8 |
-| HGT (no HALO) | 86.4 | 57.9 | 68.1 | 59.4 | 0.412 | 38.7 | 77.2 |
-| **CiteCraft (ours)** | **89.7** | **63.4** | **73.8** | **67.4** | **0.851** | **61.8** | **81.5** |
+| Random | 50.0 | 0.248 | 16.8 | 0.118 | --- | 0.331 | 0.112 |
+| TF-IDF+KNN | 71.2 | 0.382 | 74.0 | 0.397 | --- | 0.607 | 0.417 |
+| SciBERT+FT | 73.9 | 0.415 | 76.6 | 0.451 | --- | 0.632 | 0.462 |
+| GCN | 77.6 | 0.459 | 80.3 | 0.548 | --- | 0.681 | 0.503 |
+| GATv2 | 81.1 | 0.518 | 83.7 | 0.601 | --- | 0.717 | 0.556 |
+| TGN | 83.9 | 0.546 | 86.2 | 0.642 | --- | 0.751 | 0.608 |
+| HGT (w/o HALO) | 86.7 | 0.582 | 88.4 | 0.719 | --- | 0.775 | 0.646 |
+| **CiteCraft (ours)** | **90.4** | **0.637** | **90.7** | **0.814** | **0.852** | **0.818** | **0.724** |
 
 ---
 
